@@ -2,12 +2,21 @@
     font-family: "JosefinSans";
     src: url(images/JosefinSans-Regular.ttf);
 }
+
 *{
     margin: 0px;
     padding: 0px;
 }
 
+
+.font{
+    font-family: "JosefinSans";
+    color: white;
+}
+
 body{
+    background-color: #060125 !important;
+
 }
 
 .bgclr{
@@ -132,34 +141,42 @@ body{
     position: relative;
     margin-bottom: 10px;
     margin: 5px;
+    background-color: #ffffff10 !important;
+    border: 1px solid rgba(255, 255, 255, 0.192) !important;
 }
 .product-card img{
     border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+    padding: 20px !important;
+    
 }
 .sale-badge {
-    background-color: 030a13;
+    background-color: #000000;
     color: #fff;
-    width: 40px;
+    width: 70px;
     height: 40px;
-    border-radius: 20px;
+    border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: bold;
     position: absolute;
-    right: -10px;
-    top: -10px;
-    background-color: #030a13;
+    right: 35px;
+    top: 35px;
 }
+.sale-badge i{
+    margin-right: 5px;
+}
+
 .my-item{
     display: flex !important;
     flex-direction: column;
     justify-content: center !important;
     align-items: flex-end !important;
 }
+
 .carousel-item img{
     width: 100% !important;
-  
+ 
 }
 
 .heading h3{
@@ -190,10 +207,131 @@ body{
 .spn-grn{
 color: #43B4A0;
 margin-bottom: 10px;
+font-family: "JosefinSans";
+
 }
 
+.card-bg{
+    background-color: #060125;
 
+}
+.card-body{
+    padding: 0 !important;
+}
+.user-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.user-upper{
+display: flex;
+align-items: center;
+}
 
+.user-upper img{
+    border-radius: 45px;
+   
+}
+
+.user-upper > div > span{
+    color: rgba(255, 255, 255, 0.726);
+    font-size: small;
+}
+.user-upper > div > p{
+    color: white;
+}
+.user-names{
+    padding-top: 15px;
+}
+.user-sider{
+margin-right: 20px;
+}
+.user-sider > div > span{
+    color: rgba(255, 255, 255, 0.726);
+    font-size: small;
+}
+
+.user-lower{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 25px 10px 25px;
+}
+.user-lower p{
+    padding: none !important;
+}
+.user-lower span{
+    background-color: #ffffff10 !important; 
+
+    height: 30px;
+    text-align: center;
+    padding: 5px;
+}
+.top-seller{
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.151) !important;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.top-seller img{
+    margin-right: 20px;
+}
+.my-and{
+    padding-top: 20px;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #060125;
+    font-family: "JosefinSans";
+    padding: 30px 70px 30px 70px;
+    border-top: 1px solid rgba(255, 255, 255, 0.192);
+
+}
+
+footer ul li{
+    list-style-type: none;
+}
+footer ul li i{
+color: #43B4A0;
+margin-right: 10px;}
+.wdh-1{
+    width: 40%;
+    color: white;
+    padding: 20px;
+}
+.wdh{
+    width: 20%;
+    color: white;
+    padding: 20px;
+    margin-top: 10px;
+
+}
+.wdh ul li h5{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.wdh ul li{
+    margin-bottom: 20px;
+}
+.copy-right{
+    text-align: center;
+    color:  #fff;
+    font-family: "JosefinSans";
+border-top: 1px solid rgba(255, 255, 255, 0.192);
+padding-top: 20px;
+
+}
+
+.icons{
+    margin-top: 20px;
+
+}
+.icons i {
+    padding-right: 20px;
+}
 @media screen and (max-width:950px) {
     .bgclr{
         background-image: none !important;
@@ -204,7 +342,7 @@ margin-bottom: 10px;
 }
 
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:700px) {
     .flx-btn{
          display: flex;
          justify-content: center;
@@ -212,8 +350,9 @@ margin-bottom: 10px;
     .nav-item{
         border-bottom: 1px solid rgba(85, 85, 85, 0.514);
     }
-    .spn-grn{
+    .spn-grn  {
     text-align: center;
+    margin-bottom: 10px !important;
 }
     .carousel-item img{
         width: 300px !important;
@@ -244,5 +383,19 @@ margin-bottom: 10px;
         align-items: center !important;
 
     }
-    
+    .img-22 img{
+        margin-bottom: 20px;
+       }
+       footer{
+        display: block;
+        padding: 15px;
+    }
+    .wdh{
+        width: 100%;
+    margin-top: 10px;
+    }
+    .wdh-1{
+        width: 100%;
+    margin-top: 10px;
+    }
 }
